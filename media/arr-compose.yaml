@@ -38,7 +38,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Los_Angeles
+      - TZ=Europe/London
       - WEBUI_PORT=8080
       - TORRENTING_PORT=6881
     volumes:
@@ -52,7 +52,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Los_Angeles
+      - TZ=Europe/London
       - NZBGET_USER=user
       - NZBGET_PASS=password
     volumes:
@@ -68,7 +68,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Los_Angeles
+      - TZ=Europe/London
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /docker/prowlarr:/config
@@ -82,7 +82,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Los_Angeles
+      - TZ=Europe/London
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /docker/sonarr:/config
@@ -97,7 +97,7 @@ services:
     environment:
       - PUID=1000
       - PGID=100
-      - TZ=America/Los_Angeles
+      - TZ=Europe/London
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /docker/radarr:/config
@@ -116,7 +116,7 @@ services:
     environment:
      - PUID=1000
      - PGID=1000
-     - TZ=America/Los_Angeles
+     - TZ=Europe/London
     ports:
       - 8686:8686
   
@@ -127,7 +127,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Los_Angeles
+      - TZ=Europe/London
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /docker/bazarr:/config
@@ -141,7 +141,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Los_Angeles
+      - TZ=Europe/London
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /docker/readarr:/config
